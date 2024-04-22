@@ -71,9 +71,9 @@ public class SurveyForm {
     private String email;
 
     @NotNull(message = "Survey Date is required")
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-dd-MM")
     @Column(name = "dateOfSurvey")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-dd-MM")
     private Date dateOfSurvey;
 
     @Column(name = "likedMost")
